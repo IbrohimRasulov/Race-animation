@@ -1,0 +1,159 @@
+body {
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+}
+
+.grass {
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    width: 100%;
+}
+
+.road {
+    background-color: grey;
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+}
+
+.border {
+    border: 5px dashed rgb(235, 232, 232);
+    width: 99%;
+    position: absolute;
+    top: 50%;
+}
+
+.cloud {
+    position: absolute;
+    animation-name: going-smooth;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cloud-1 {
+    width: 150px;
+    top: 40px;
+    left: -150px;
+    animation-duration: 35s;
+}
+
+.cloud-2 {
+    width: 120px;
+    top: 100px;
+    left: -120px;
+    animation-duration: 55s;
+    animation-delay: 2s;
+}
+
+.cloud-3 {
+    width: 170px;
+    top: 100px;
+    left: -170px;
+    animation-duration: 40s;
+    animation-delay: 12s;
+}
+
+.cloud-4 {
+    width: 150px;
+    top: 0;
+    left: -150px;
+    animation-duration: 80s;
+    animation-delay: 25s;
+}
+
+@keyframes going-smooth {
+    from { transform: translateX(0); }
+    from { transform: translateX(1400px); }
+}
+
+.bird {
+    position: absolute;
+    animation-name: flying;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.bird-1 {
+    top: 10px;
+    left: -70px;
+    width: 70px;
+    animation-duration: 10s;
+}
+
+.bird-2 {
+    top: 145px;
+    left: -100px;
+    width: 100px;
+    animation-duration: 5s;
+    animation-delay: 4s;
+}
+
+.bird-3 {
+    top: 40px;
+    left: -100px;
+    width: 100px;
+    animation-duration: 7s;
+    animation-delay: 6s;
+}
+
+@keyframes flying {
+    from { transform: translateX(0); }
+    from { transform: translateX(1340px); }
+}
+
+.portal-start {
+    width: 120px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    transform: scaleX(0.6);
+}
+
+.portal-end {
+    width: 120px;
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    transform: scaleX(0.6);
+}
+
+.race {
+    position: absolute;
+    bottom: 170px;
+    animation-name: the-race;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.zombi {
+    width: 100px;
+    left: 20px;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.sonic {
+    width: 70px;
+    left: 40px;
+    animation-duration: 5s;
+    animation-delay: 1;
+}
+
+.runner {
+    width: 100px;
+    left: 20px;
+    animation-duration: 10s;
+}
+
+@keyframes the-race {
+    from { transform: translateX(0); }
+    from { transform: translateX(1100px); }
+}
